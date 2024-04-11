@@ -1,12 +1,13 @@
 {
   "name": "@sysafarila/js-paginate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A pagination generator for JavaScript with Median",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "test": "jest"
   },
   "keywords": [
     "Javascript",
