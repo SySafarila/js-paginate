@@ -31,12 +31,23 @@ describe("Testing Paginate Function", () => {
     expect(result[4]).toBe(5);
   });
 
-  test("Generating pagination for 5 pages and 9 current page with 9 array length", () => {
-    const result = paginate({
-      current_page: 9,
-      length: 9,
-      pages: 5,
-    });
-    expect(result.length).toBe(0);
+  test("Throw error when current_page is larger than pages or total pages", () => {
+    expect(() => {
+      paginate({
+        current_page: 9,
+        length: 9,
+        pages: 5,
+      });
+    }).toThrow();
+  });
+
+  test("Throw error when length is less then one", () => {
+    expect(() => {
+      paginate({
+        current_page: 9,
+        length: 0,
+        pages: 5,
+      });
+    }).toThrow();
   });
 });
