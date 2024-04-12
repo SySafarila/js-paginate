@@ -6,3 +6,4 @@ tsup.config.ts
 tsconfig.json
 jest.config.js
 .gitattributes
+.github
