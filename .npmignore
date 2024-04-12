@@ -2,3 +2,7 @@
 /src
 /tests
 /coverage
+tsup.config.ts
+tsconfig.json
+jest.config.js
+.gitattributes
