@@ -7,7 +7,11 @@ export function paginate({
 }: PaginateProps): number[] {
   // handle if current page is larger than total page
   if (current_page > pages) {
-    return [];
+    throw new Error(`"current_page" must be greater than "pages".`);
+  }
+
+  if (length == 0) {
+    throw new Error(`"length" must be greater than zero.`);
   }
 
   let center = Math.floor(length / 2);
