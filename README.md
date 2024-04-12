@@ -5,13 +5,14 @@ A pagination generator for JavaScript with Median
 # Usage
 
 #### Module:
+
 ```js
 import { paginate } from "@sysafarila/js-paginate";
 
 const result = paginate({
-  current_page: 12,
-  display: 9,
-  pages: 20,
+  current_page: 12, // current page or active page
+  length: 9, // array length
+  pages: 20, // total pages
 });
 
 console.log(result);
@@ -20,13 +21,14 @@ console.log(result);
 ```
 
 #### CommonJs:
+
 ```js
 const { paginate } = require("@sysafarila/js-paginate");
 
 const res = paginate({
-  current_page: 12,
-  display: 9,
-  pages: 20,
+  current_page: 12, // current page or active page
+  length: 9, // array length
+  pages: 20, // total pages
 });
 
 console.log(result);
