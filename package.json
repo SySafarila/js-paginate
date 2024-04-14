@@ -1,6 +1,6 @@
 {
   "name": "@sysafarila/js-paginate",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A pagination generator for JavaScript with Median",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
