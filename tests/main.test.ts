@@ -11,6 +11,16 @@ describe("Testing Paginate Function", () => {
     expect(result[4]).toBe(8);
   });
 
+  test("Generating pagination for 20 pages and 12 current page with 5 array length", () => {
+    const result = paginate({
+      current_page: 12, // current page or active page
+      length: 5, // array length
+      pages: 20, // total pages
+    });
+    expect(result.length).toBe(5);
+    expect(result[2]).toBe(12);
+  });
+
   test("Generating pagination for 20 pages and 19 current page with 9 array length", () => {
     const result = paginate({
       current_page: 19,
