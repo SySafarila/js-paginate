@@ -13,38 +13,44 @@ A pagination generator for JavaScript with Median
 
 # Usage
 
+### Parameter Detail
+
+| Parameter    | Description                          | Required |
+| ------------ | ------------------------------------ | :------: |
+| current_page | Current page or active page          |   YES    |
+| pages        | Total pages (Received from Back-end) |   YES    |
+| length       | Limit generated array length         |   YES    |
+
 ### CDN
 
-- jsDelivr https://www.jsdelivr.com/package/npm/@sysafarila/js-paginate
+jsDelivr https://www.jsdelivr.com/package/npm/@sysafarila/js-paginate
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@sysafarila/js-paginate@0.0.9/dist/index.min.js"></script>
 <script>
   const result = paginate({
-    current_page: 12, // current page or active page
-    length: 9, // array length
-    pages: 20, // total pages
+    current_page: 12,
+    length: 9,
+    pages: 20,
   });
 
   console.log(result);
-  // result
-  // [8, 9, 10, 11, 12, 13, 14, 15, 16];
 </script>
 ```
+
+or
 
 ```html
 <script type="module">
   import { paginate } from "https://cdn.jsdelivr.net/npm/@sysafarila/js-paginate@0.0.9/+esm";
 
   const result = paginate({
-    current_page: 12, // current page or active page
-    length: 9, // array length
-    pages: 20, // total pages
+    current_page: 12,
+    length: 9,
+    pages: 20,
   });
 
   console.log(result);
-  // result
-  // [8, 9, 10, 11, 12, 13, 14, 15, 16];
 </script>
 ```
 
@@ -52,60 +58,36 @@ A pagination generator for JavaScript with Median
 
 ```js
 import { paginate } from "@sysafarila/js-paginate";
+
+const result = paginate({
+  current_page: 12,
+  length: 9,
+  pages: 20,
+});
+
+console.log(result);
 ```
 
 ### CommonJs
 
 ```js
 const { paginate } = require("@sysafarila/js-paginate");
-```
 
-### Example
-
-```js
 const result = paginate({
-  current_page: 12, // current page or active page
-  length: 9, // array length
-  pages: 20, // total pages
+  current_page: 12,
+  length: 9,
+  pages: 20,
 });
 
 console.log(result);
-// result
-// [8, 9, 10, 11, 12, 13, 14, 15, 16];
 ```
+
+### Result
+
+Return value of `paginate` function:
 
 ```js
-const result = paginate({
-  current_page: 6, // current page or active page
-  length: 9, // array length
-  pages: 20, // total pages
-});
-
-console.log(result);
-// result
-// [2, 3, 4, 5, 6, 7, 8, 9, 10];
+[8, 9, 10, 11, 12, 13, 14, 15, 16];
 ```
 
-```js
-const result = paginate({
-  current_page: 2, // current page or active page
-  length: 9, // array length
-  pages: 5, // total pages
-});
-
-console.log(result);
-// result
-// [1, 2, 3, 4, 5];
-```
-
-```js
-const result = paginate({
-  current_page: 12, // current page or active page
-  length: 5, // array length
-  pages: 20, // total pages
-});
-
-console.log(result);
-// result
-// [10, 11, 12, 13, 14];
-```
+Next, you have to `loop` this generated array to build your own UI.
