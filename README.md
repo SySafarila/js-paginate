@@ -1,6 +1,6 @@
-# js-paginate
+# JS-Paginate
 
-A pagination generator for JavaScript with Median
+An agnostic pagination package for JavaScript.
 
 ![NPM License](https://img.shields.io/npm/l/%40sysafarila%2Fjs-paginate?style=flat-square)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sysafarila/js-paginate/.github%2Fworkflows%2Ftest.yml?style=flat-square&label=github%20test)
