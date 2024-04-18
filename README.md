@@ -13,20 +13,18 @@ An agnostic pagination package for JavaScript.
 
 # Usage
 
-### Parameter Detail
-
-| Parameter    | Description                          | Required |
-| ------------ | ------------------------------------ | :------: |
-| current_page | Current page or active page          |   YES    |
-| pages        | Total pages (Received from Back-end) |   YES    |
-| length       | Limit generated array length         |   YES    |
+| Parameter    | Description                          |           Required            |
+| ------------ | ------------------------------------ | :---------------------------: |
+| current_page | Current page or active page          |              YES              |
+| pages        | Total pages (Received from Back-end) |              YES              |
+| length       | Limit generated array length         | YES, Optional since `v0.0.12` |
 
 ### CDN
 
 jsDelivr https://www.jsdelivr.com/package/npm/@sysafarila/js-paginate
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@sysafarila/js-paginate@0.0.9/dist/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sysafarila/js-paginate@0.0.12/dist/index.min.js"></script>
 <script>
   const result = paginate({
     current_page: 12,
@@ -42,7 +40,7 @@ or
 
 ```html
 <script type="module">
-  import { paginate } from "https://cdn.jsdelivr.net/npm/@sysafarila/js-paginate@0.0.9/+esm";
+  import { paginate } from "https://cdn.jsdelivr.net/npm/@sysafarila/js-paginate@0.0.12/+esm";
 
   const result = paginate({
     current_page: 12,

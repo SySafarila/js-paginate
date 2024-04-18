@@ -3,7 +3,7 @@ import { PaginateProps } from "./types";
 export function paginate({
   pages,
   current_page,
-  length,
+  length = 9,
 }: PaginateProps): number[] {
   // handle if current page is larger than total page
   if (current_page > pages) {

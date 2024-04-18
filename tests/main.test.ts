@@ -1,6 +1,15 @@
 import { paginate } from "../src/index";
 
 describe("Testing Paginate Function", () => {
+  test("Generating pagination for 20 pages and 8 current page with default array length", () => {
+    const result = paginate({
+      current_page: 8,
+      pages: 20,
+    });
+    expect(result.length).toBe(9);
+    expect(result[4]).toBe(8);
+  });
+
   test("Generating pagination for 20 pages and 8 current page with 9 array length", () => {
     const result = paginate({
       current_page: 8,
