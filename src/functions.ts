@@ -10,6 +10,7 @@ export function paginate({
     throw new Error(`"current_page" must be greater than "pages".`);
   }
 
+  // handle if length is 0
   if (length == 0) {
     throw new Error(`"length" must be greater than zero.`);
   }
