@@ -1,6 +1,6 @@
 {
   "name": "@sysafarila/js-paginate",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "An agnostic pagination package for JavaScript.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

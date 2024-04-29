@@ -2,14 +2,22 @@
 
 An agnostic pagination package for JavaScript.
 
-![NPM License](https://img.shields.io/npm/l/%40sysafarila%2Fjs-paginate?style=flat-square)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sysafarila/js-paginate/.github%2Fworkflows%2Ftest.yml?style=flat-square&label=github%20test)
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sysafarila/js-paginate/.github%2Fworkflows%2Fnpm-publish.yml?style=flat-square&label=publish%20package)
-![NPM Downloads](https://img.shields.io/npm/dy/%40sysafarila%2Fjs-paginate?style=flat-square)
-![NPM Version](https://img.shields.io/npm/v/%40sysafarila%2Fjs-paginate?style=flat-square)
-![GitHub Release](https://img.shields.io/github/v/release/sysafarila/js-paginate?style=flat-square)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40sysafarila%2Fjs-paginate?style=flat-square)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40sysafarila%2Fjs-paginate?style=flat-square)
+<p style="text-align: center;"><img src="https://img.shields.io/npm/l/%40sysafarila%2Fjs-paginate?style=flat-square" alt="NPM License">
+<img src="https://img.shields.io/github/actions/workflow/status/sysafarila/js-paginate/.github%2Fworkflows%2Ftest.yml?style=flat-square&amp;label=github%20test" alt="GitHub Actions Workflow Status">
+<img src="https://img.shields.io/github/actions/workflow/status/sysafarila/js-paginate/.github%2Fworkflows%2Fnpm-publish.yml?style=flat-square&amp;label=auto%20publish" alt="GitHub Actions Workflow Status">
+<img src="https://img.shields.io/npm/dy/%40sysafarila%2Fjs-paginate?style=flat-square" alt="NPM Downloads">
+<img src="https://img.shields.io/npm/v/%40sysafarila%2Fjs-paginate?style=flat-square&amp;label=npm%20version" alt="NPM Version">
+<img src="https://img.shields.io/github/v/release/sysafarila/js-paginate?style=flat-square" alt="GitHub Release">
+<img src="https://img.shields.io/bundlephobia/minzip/%40sysafarila%2Fjs-paginate?style=flat-square" alt="npm bundle size">
+<img src="https://img.shields.io/npm/unpacked-size/%40sysafarila%2Fjs-paginate?style=flat-square" alt="NPM Unpacked Size"></p>
+
+# Installation
+
+Run this command below on your terminal
+
+```
+npm i @sysafarila/js-paginate
+```
 
 # Usage
 
